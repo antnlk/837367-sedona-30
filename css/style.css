@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "PTSans";
+    src: local("PTSans"),
+    url("../fonts/PTSans.woff2") format("woff2"),
+    url("../fonts/PTSans.woff") format("woff");
+    font-weight: 400;
+    
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: local("PTSans"),
+         url("../fonts/PTSans-Bold.woff2") format("woff2"),
+         url("../fonts/PTSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+body {
+    font-family: "PTSans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+.main-menu {
+    font-weight: 700;
+}
+.banner-block {
+    width: 1200px;
+    height: 509px;
+    left: 40px;
+    top: 55px;
+    background: url(../img/backgroundsedona.png);
+}
+.banner-block__text-image {
+    left: 411.38px;
+    top: 132.35px;
+    text-align: center;
+}
+.promo-title {
+    text-align: center;
+}
+.promo-sub-text {
+    text-align: center;
+    color: #333333;
+}
+.advantages-block {
+    width: 400px;
+    /* height: 256px; */
+    background: #81B3D2;
+    color: #FFFFFF;
+}
