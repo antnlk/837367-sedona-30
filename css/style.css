@@ -1,54 +1,224 @@
 @font-face {
-    font-family: "PTSans";
-    src: local("PTSans"),
+  font-family: "PTSans";
+  src: local("PTSans"),
     url("../fonts/PTSans.woff2") format("woff2"),
     url("../fonts/PTSans.woff") format("woff");
-    font-weight: 400;
-    
+  font-weight: 400;
+
   font-style: normal;
 }
 
 @font-face {
-    font-family: "PTSans";
-    src: local("PTSans"),
-         url("../fonts/PTSans-Bold.woff2") format("woff2"),
-         url("../fonts/PTSans-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: "PTSans";
+  src: local("PTSans"),
+    url("../fonts/PTSans-Bold.woff2") format("woff2"),
+    url("../fonts/PTSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
 
+/* Переменные */
+
+:root {
+  --black: #000000;
+  --grey: #333333;
+  --grey-light: #666666;
+  --blue-bg: #81b3d2;
+  --grey-bg: #EEEEEE;
+  --grey-rating-bg: #F2F2F2;
+  --brown-bg: #766357;
+  --map-bg: #f2f1ef;
+  --filter-bg: #5899d6;
+  --white: #FFFFFF;
+  --brown-light: #6A6A6A;
+  --blue: #669EC0;
+  --blue-dark: #5496BD;
+  --brown-dark: #604E43;
+  --brown-darker: #503E33;
+
+}
+
+/* Стили */
 
 body {
-    font-family: "PTSans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #000000;
+  font-family: "PTSans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--black);
+  text-transform: uppercase;
 }
+
 .main-menu {
-    font-weight: 700;
+  font-weight: bold;
 }
+
 .banner-block {
-    width: 1200px;
-    height: 509px;
-    left: 40px;
-    top: 55px;
-    background: url(../img/backgroundsedona.png);
+  width: 1200px;
+  height: 509px;
+  left: 40px;
+  top: 55px;
+  background: url(../img/backgroundsedona.png);
 }
-.banner-block__text-image {
-    left: 411.38px;
-    top: 132.35px;
-    text-align: center;
+
+.banner-block__text-img {
+  left: 411.38px;
+  top: 132.35px;
 }
-.promo-title {
-    text-align: center;
+
+.promo-block {
+  text-align: center;
 }
+
 .promo-sub-text {
-    text-align: center;
-    color: #333333;
+  color: var(--grey);
 }
+
 .advantages-block {
-    width: 400px;
-    /* height: 256px; */
-    background: #81B3D2;
-    color: #FFFFFF;
+  width: 400px;
 }
+
+.advantages-text-block.blue-bg {
+  background: var(--blue-bg);
+  color: var(--white);
+}
+
+.advantages-text-block.grey-bg {
+  background: var(--grey-bg);
+}
+
+/* Стилизация */
+.main-menu__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.main-menu__link:hover {
+  color: var(--blue-bg);
+}
+
+.main-menu__link:active {
+  color: var(--black);
+  opacity: .3;
+}
+
+.main-menu__link:focus {
+  color: var(--brown-bg);
+}
+
+.promo-title {
+  font-size: 21px;
+  line-height: 26px;
+
+}
+
+.promo-sub-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.advantages-text-block__title {
+  font-size: 21px;
+}
+
+.hotel-form {
+  text-align: left;
+}
+
+.advantages-text-block__paragraph {
+  line-height: 21px;
+}
+
+.question-title {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.question-sub-text {
+  font-size: 14px;
+  line-height: 0.8;
+}
+
+.popup {
+  font-weight: bold;
+}
+
+.popup__link {
+  display: block;
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
+  background: var(--brown-bg);
+  color: var(--white);
+}
+
+.popup__link:hover {
+  background: var(--brown-dark);
+}
+
+.popup__link:active {
+  background: var(--brown-darker);
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.hotel-form__fieldset {
+  line-height: 26px;
+}
+
+.hotel-form__input {
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.hotel-form__submit-button {
+  width: 458px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  background: var(--blue-bg);
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.hotel-form__submit-button:hover {
+  background: var(--blue);
+}
+
+.hotel-form__submit-button:active {
+  background: var(--blue-dark);
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__main-content-call {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer__copyright-text {
+  line-height: 26px;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: var(--blue-bg);
+}
+
+.footer__map-wrapper {
+  width: 1200px;
+  height: 594px;
+  background: var(--map-bg);
+}
+
+.footer__telephone {
+  color: inherit;
+}
+
+
