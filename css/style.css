@@ -221,4 +221,136 @@ body {
   color: inherit;
 }
 
+/* Стилизация каталога */
+.filter-catalog {
+  color: var(--white);
+  background: var(--filter-bg);
+}
+
+.search-list__card-tittle-link {
+  color: inherit;
+}
+
+.filter-catalog__legend {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter-catalog__input:disabled {
+  color: var(--brown-light)
+}
+
+.filter-catalog__submit-button:hover {
+  color: var(--black);
+  background: var(--white);
+}
+
+.filter__search-result {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.filter__sort-button-block {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.filter__sort-button {
+  color: var(--black);
+  opacity: .3;
+}
+
+.filter__sort-button:hover,
+.filter__sort-button:focus,
+.filter__sort-button.selected {
+  color: var(--blue-bg);
+  opacity: 1;
+}
+
+.filter__sort-button:active {
+  color: var(--black);
+  opacity: 1;
+}
+
+.filter__order-icon:hover path {
+  fill: black;
+}
+
+.filter__order-icon:active path {
+  fill: #81b3d2;
+}
+
+.filter__order-icon:focus path {
+  fill: #81b3d2;
+}
+
+.search-list__card-tittle-link:hover {
+  color: var(--blue-bg);
+}
+
+.search-list__card-tittle-link:active {
+  opacity: .3;
+  color: (var(--black));
+}
+
+.search-list__button {
+  display: inline-block;
+  min-width: 110px;
+  height: 27px;
+  font-weight: bold;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.search-list__button.more {
+  background: var(--blue-bg);
+}
+
+.search-list__button.more:hover {
+  background: var(--blue);
+}
+
+.search-list__button.more:active {
+  background: var(--blue-dark);
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-list__button.booking {
+  background: var(--brown-bg);
+}
+
+.search-list__button.booking:hover {
+  background: var(--brown-dark);
+}
+
+.search-list__button.booking:active {
+  background: var(--brown-darker);
+  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.search-list__rating {
+  display: block;
+  width: 110px;
+  height: 27px;
+  background: var(--grey-rating-bg);
+  color: var(--grey-light);
+  text-transform: uppercase;
+}
+
+.filter-catalog__submit-button {
+  width: 137px;
+  height: 36px;
+  border: 2px solid var(--white);
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: inherit;
+  background: transparent;
+}
+
+
+
 
